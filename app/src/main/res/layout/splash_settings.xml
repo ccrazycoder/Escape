@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@color/bg1">
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center">
+		<TableLayout android:id="@+id/TableLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="20dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textColor="@color/white"
+					android:textStyle="bold" android:id="@+id/txtDifficulty"
+					android:text="Difficulty : " android:layout_gravity="center_vertical" android:textSize="50dp"></TextView>
+				<RadioGroup android:id="@+id/RadioGroup01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:orientation="horizontal" android:layout_marginLeft="10dp">
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/rdbEasy"
+						android:text="  Easy" android:textSize="50dp" android:layout_gravity="center_vertical"></RadioButton>
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="  Medium"
+						android:id="@+id/rdbMedium" android:textSize="50dp" android:layout_gravity="center_vertical"></RadioButton>
+					<RadioButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/rdbHard"
+						android:text="  Hard" android:textSize="50dp" android:layout_gravity="center_vertical"></RadioButton>
+				</RadioGroup>
+			</TableRow>
+			<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="20dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/white"
+					android:textStyle="bold" android:text="Sound :" android:id="@+id/txtSound" android:textSize="50dp" android:layout_gravity="center_vertical"></TextView>
+				<LinearLayout android:id="@+id/LinearLayout02"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp">
+					<ToggleButton android:layout_height="wrap_content"
+						android:id="@+id/tbutton" android:layout_gravity="center_vertical"
+						android:isScrollContainer="true" android:layout_width="wrap_content" android:layout_marginTop="10dp"></ToggleButton>
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="20dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginTop="10dp"
+					android:textColor="@color/white" android:textStyle="bold"
+					android:text="Clear Scores : " android:id="@+id/txtClearScores" android:textSize="50dp" android:layout_gravity="center_vertical"></TextView>
+				<CheckBox android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/chkScores"
+					android:layout_gravity="center_vertical" android:layout_marginLeft="10dp" android:layout_marginTop="10dp"></CheckBox>
+			</TableRow>
+			<TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="40dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/txtExit"
+					android:layout_marginTop="10dp" android:textColor="@color/white"
+					android:textStyle="bold" android:text="Save &amp; Exit"
+					android:gravity="left" android:textSize="50dp" android:layout_gravity="center_vertical"></TextView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginTop="10dp"
+					android:textColor="@color/white" android:textStyle="bold"
+					android:text="Exit" android:id="@+id/txtExit0"
+					android:layout_marginLeft="10dp" android:textSize="50dp"></TextView>
+			</TableRow>
+		</TableLayout>
+	</FrameLayout>
+</FrameLayout>

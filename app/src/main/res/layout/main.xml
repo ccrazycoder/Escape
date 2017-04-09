@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+	</FrameLayout>
+	<LinearLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="50dp" android:id="@+id/lnrAdd"></LinearLayout>
+</FrameLayout>
